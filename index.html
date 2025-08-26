@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Digital HD - La Mejor Experiencia de Entretenimiento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide-icons@latest/dist/lucide.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0e12; /* Fondo casi negro */
+            color: #e2e8f0; /* Color de texto claro */
+        }
+        .lucide {
+            stroke-width: 2.5;
+        }
+
+        /* Hero Section */
+        .hero-bg {
+            background: radial-gradient(circle at 50% 10%, rgba(20, 150, 255, 0.15) 0%, rgba(13, 14, 18, 0) 60%), #0d0e12;
+        }
+
+        /* Keyframe animations for futuristic glow and fade-in effects */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-600 { animation-delay: 0.6s; }
+        .delay-800 { animation-delay: 0.8s; }
+
+        @keyframes glowing-border {
+            0% { border-color: #4f46e5; box-shadow: 0 0 5px #4f46e5; }
+            50% { border-color: #8b5cf6; box-shadow: 0 0 20px #8b5cf6; }
+            100% { border-color: #4f46e5; box-shadow: 0 0 5px #4f46e5; }
+        }
+        .border-glowing {
+            border: 2px solid;
+            animation: glowing-border 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-200">
+
+    <header class="relative hero-bg py-20 md:py-32 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-10" style="background-image: radial-gradient(#4a4d6e 1px, transparent 1px); background-size: 20px 20px;"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <a href="#" class="mb-4 inline-flex items-center">
+                <img src="https://github.com/JAlexisMedrano/data/blob/main/TODO%20DIGITAL.png?raw=true" alt="Logo" class="w-16 h-16 mr-4 animate-fade-in-up">
+                <span class="text-4xl font-extrabold text-blue-400 tracking-tight animate-fade-in-up delay-200">TV Digital HD</span>
+            </a>
+            
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-black leading-tight mt-6 mb-4 animate-fade-in-up delay-400 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-500">
+                La Evolución del Entretenimiento Digital
+            </h1>
+            <p class="text-lg md:text-2xl mb-8 opacity-80 animate-fade-in-up delay-600 max-w-3xl mx-auto">
+                Accede a un universo de contenido con una calidad de imagen inigualable, estabilidad de conexión y cientos de canales premium.
+            </p>
+            <a href="#planes" class="inline-block bg-blue-600 text-white font-bold py-4 px-10 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105 animate-fade-in-up delay-800">
+                Ver Planes Ahora
+            </a>
+        </div>
+    </header>
+
+    <section class="py-16 md:py-20 bg-[#0d0e12] relative z-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-12 text-gray-50">
+                Rompe las Barreras del Entretenimiento
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 rounded-2xl border border-gray-700 hover:border-blue-500 transition duration-300 bg-gray-900 shadow-xl">
+                    <div class="mb-4 text-blue-400">
+                        <i data-lucide="signal-low" class="lucide w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-50">Señal Deficiente</h3>
+                    <p class="text-gray-400">Olvida las interrupciones y la baja calidad de imagen. Disfruta de una señal sólida y clara.</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-gray-700 hover:border-blue-500 transition duration-300 bg-gray-900 shadow-xl">
+                    <div class="mb-4 text-blue-400">
+                        <i data-lucide="tv-off" class="lucide w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-50">Contenido Limitado</h3>
+                    <p class="text-gray-400">Accede a una biblioteca masiva de canales y contenido On Demand para todos los gustos.</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-gray-700 hover:border-blue-500 transition duration-300 bg-gray-900 shadow-xl">
+                    <div class="mb-4 text-blue-400">
+                        <i data-lucide="monitor-dot" class="lucide w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-50">Poca Resolución</h3>
+                    <p class="text-gray-400">La televisión tradicional no puede competir con la nitidez y el color de nuestra calidad Full HD y 4K.</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-gray-700 hover:border-blue-500 transition duration-300 bg-gray-900 shadow-xl">
+                    <div class="mb-4 text-blue-400">
+                        <i data-lucide="wallet" class="lucide w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-50">Precios Injustos</h3>
+                    <p class="text-gray-400">Paga solo por lo que consumes con nuestros planes flexibles y sin contratos a largo plazo.</p>
+                </div>
+            </div>
+            <div class="mt-12">
+                <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+                    Nuestro servicio de **TV Digital** es la solución definitiva para una experiencia de visualización sin límites.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-16 md:py-20 bg-[#0d0e12]">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-12 text-gray-50">
+                Características que nos Definen
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-gray-900 p-8 rounded-2xl shadow-xl flex flex-col items-center border border-transparent hover:border-blue-500 transition duration-300 transform hover:scale-105">
+                    <div class="bg-gray-800 text-blue-400 rounded-full p-4 mb-6 ring-2 ring-blue-500/50">
+                        <i data-lucide="hdmi-port" class="lucide w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-50">Calidad Full HD y 4K</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Sumérgete en un mundo de colores vivos y detalles nítidos. Cada escena cobra vida en tu pantalla.
+                    </p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-2xl shadow-xl flex flex-col items-center border border-transparent hover:border-blue-500 transition duration-300 transform hover:scale-105">
+                    <div class="bg-gray-800 text-blue-400 rounded-full p-4 mb-6 ring-2 ring-blue-500/50">
+                        <i data-lucide="tv" class="lucide w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-50">Catálogo Ilimitado</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Explora una extensa variedad de canales, series y películas. Hay algo nuevo para todos los gustos y edades.
+                    </p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-2xl shadow-xl flex flex-col items-center border border-transparent hover:border-blue-500 transition duration-300 transform hover:scale-105">
+                    <div class="bg-gray-800 text-blue-400 rounded-full p-4 mb-6 ring-2 ring-blue-500/50">
+                        <i data-lucide="clock-rewind" class="lucide w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-50">Funciones Inteligentes</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Controla tu experiencia. Pausa, retrocede y guarda tu contenido favorito con nuestra guía interactiva.
+                    </p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-2xl shadow-xl flex flex-col items-center border border-transparent hover:border-blue-500 transition duration-300 transform hover:scale-105">
+                    <div class="bg-gray-800 text-blue-400 rounded-full p-4 mb-6 ring-2 ring-blue-500/50">
+                        <i data-lucide="cloud" class="lucide w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-50">Grabación en la Nube</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        No te pierdas ningún momento. Graba tus programas y míralos cuando quieras, desde cualquier dispositivo compatible.
+                    </p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-2xl shadow-xl flex flex-col items-center border border-transparent hover:border-blue-500 transition duration-300 transform hover:scale-105">
+                    <div class="bg-gray-800 text-blue-400 rounded-full p-4 mb-6 ring-2 ring-blue-500/50">
+                        <i data-lucide="wifi" class="lucide w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-50">Conexión Ininterrumpida</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Nuestra tecnología garantiza una señal estable y robusta, eliminando las frustraciones de las interrupciones.
+                    </p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-2xl shadow-xl flex flex-col items-center border border-transparent hover:border-blue-500 transition duration-300 transform hover:scale-105">
+                    <div class="bg-gray-800 text-blue-400 rounded-full p-4 mb-6 ring-2 ring-blue-500/50">
+                        <i data-lucide="life-buoy" class="lucide w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-50">Soporte 24/7</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Estamos disponibles en todo momento para ayudarte. Tu satisfacción es nuestra prioridad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planes" class="py-16 md:py-20 bg-gray-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-10" style="background-image: radial-gradient(#2d3142 1px, transparent 1px); background-size: 20px 20px;"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                Nuestros Planes
+            </h2>
+            <p class="text-lg md:text-xl mb-12 opacity-80 max-w-2xl mx-auto">
+                Todos los planes incluyen el mismo contenido de alta calidad. ¡Elige el que mejor se adapte a tu estilo de vida!
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-gray-900 p-8 rounded-3xl shadow-lg flex flex-col border-2 border-transparent transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Plan Mensual</h3>
+                    <p class="text-5xl font-extrabold mb-4 flex items-center justify-center text-gray-50">
+                        $11000
+                        <span class="text-xl font-normal text-gray-400 ml-2">/mes</span>
+                    </p>
+                    <ul class="text-left mb-6 space-y-3 flex-grow text-gray-300">
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="lucide w-5 h-5 text-green-400 mr-2"></i>
+                            Más de 400 canales
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="lucide w-5 h-5 text-green-400 mr-2"></i>
+                            28000 películas y 4000 series
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="lucide w-5 h-5 text-green-400 mr-2"></i>
+                            Packs Premium y Eventos Deportivos
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="lucide w-5 h-5 text-green-400 mr-2"></i>
+                            Opción de contenido para adultos
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="block bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 text-center">
+                        Elegir Plan Mensual
+                    </a>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-3xl shadow-2xl flex flex-col border-2 border-blue-500 transform scale-105 transition duration-300 relative border-glowing">
+                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-500 text-white text-sm font-bold px-4 py-1 rounded-full shadow-lg uppercase tracking-wider">
+                        Más Popular
+                    </span>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Plan Trimestral</h3>
+                    <p class="text-5xl font-extrabold mb-2 flex items-center justify-center text-gray-50">
+                        $31000
+                    </p>
+                    <p class="text-lg font-bold mb-4 text-green-400 -mt-2">
+                        + 1 Mes de Regalo
+                    </p>
+                    <ul class="text-left mb-6 space-y-3 flex-grow text-gray-300">
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="lucide w-5 h-5 text-green-400 mr-2"></i>
+                            Más de 4000 canales
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="lucide w-5 h-5 text-green-400 mr-2"></i>
+                            28000 películas y series
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="lucide w-5 h-5 text-green-400 mr-2"></i>
+                            Packs Premium y Eventos Deportivos
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="lucide w-5 h-5 text-green-400 mr-2"></i>
+                            Categoría de Adultos
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="block bg-blue-500 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-600 transition duration-300 text-center">
+                        Elegir Plan Trimestral
+                    </a>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-3xl shadow-lg flex flex-col border-2 border-transparent transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Plan Semestral</h3>
+                    <p class="text-5xl font-extrabold mb-2 flex items-center justify-center text-gray-50">
+                        $60000
+                    </p>
+                    <p class="text-lg font-bold mb-4 text-green-400 -mt-2">
+                        + 2 Meses de Regalo
+                    </p>
+                    <ul class="text-left mb-6 space-y-3 flex-grow text-gray-300">
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="lucide w-5 h-5 text-green-400 mr-2"></i>
+                            Más de 4000 canales
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="lucide w-5 h-5 text-green-400 mr-2"></i>
+                            28000 películas y series
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="lucide w-5 h-5 text-green-400 mr-2"></i>
+                            Packs Premium y Eventos Deportivos
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="lucide w-5 h-5 text-green-400 mr-2"></i>
+                            Categoría de Adultos
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="block bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 text-center">
+                        Elegir Plan Semestral
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-16 md:py-20 bg-[#0d0e12]">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-12 text-gray-50">
+                Lo que Dicen Nuestros Clientes
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gray-900 p-8 rounded-2xl shadow-xl flex flex-col items-center border border-gray-700">
+                    <img class="w-24 h-24 rounded-full mb-4 object-cover ring-2 ring-blue-500" src="https://placehold.co/100x100/374151/FFFFFF?text=Ana" alt="Foto de Ana M.">
+                    <p class="text-lg italic text-gray-400 mb-4">
+                        "¡La calidad de imagen es increíble! Por fin puedo ver mis series favoritas como se merecen. El cambio fue instantáneo."
+                    </p>
+                    <p class="font-semibold text-blue-400">- Ana M., Buenos Aires</p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-2xl shadow-xl flex flex-col items-center border border-gray-700">
+                    <img class="w-24 h-24 rounded-full mb-4 object-cover ring-2 ring-blue-500" src="https://placehold.co/100x100/374151/FFFFFF?text=Pedro" alt="Foto de Pedro G.">
+                    <p class="text-lg italic text-gray-400 mb-4">
+                        "El soporte técnico es excelente y los planes son súper flexibles. Pudimos personalizar justo lo que necesitábamos para mi familia."
+                    </p>
+                    <p class="font-semibold text-blue-400">- Pedro G., Córdoba</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-20 bg-gray-950">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 text-gray-50">
+                Preguntas Frecuentes
+            </h2>
+            <div class="space-y-6">
+                <div class="border border-gray-700 rounded-lg overflow-hidden bg-gray-900">
+                    <button class="w-full text-left p-6 flex justify-between items-center text-gray-50 hover:bg-gray-800 transition duration-200" onclick="toggleFAQ('faq1')">
+                        <span class="text-lg font-semibold">¿Necesito un decodificador especial?</span>
+                        <i data-lucide="chevron-down" class="lucide w-6 h-6 text-blue-400 transform transition-transform duration-300" id="icon-faq1"></i>
+                    </button>
+                    <div class="p-6 bg-gray-800 hidden" id="faq1-content">
+                        <p class="text-gray-400">No, solo necesitas contar con un dispositivo Android (Smart TV, tablet, celular o convertidor a smart).</p>
+                    </div>
+                </div>
+                <div class="border border-gray-700 rounded-lg overflow-hidden bg-gray-900">
+                    <button class="w-full text-left p-6 flex justify-between items-center text-gray-50 hover:bg-gray-800 transition duration-200" onclick="toggleFAQ('faq2')">
+                        <span class="text-lg font-semibold">¿Puedo probar el servicio antes de contratar?</span>
+                        <i data-lucide="chevron-down" class="lucide w-6 h-6 text-blue-400 transform transition-transform duration-300" id="icon-faq2"></i>
+                    </button>
+                    <div class="p-6 bg-gray-800 hidden" id="faq2-content">
+                        <p class="text-gray-400">Sí, el sistema se puede probar totalmente gratis.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-700 rounded-lg overflow-hidden bg-gray-900">
+                    <button class="w-full text-left p-6 flex justify-between items-center text-gray-50 hover:bg-gray-800 transition duration-200" onclick="toggleFAQ('faq3')">
+                        <span class="text-lg font-semibold">¿Cómo se realiza la instalación?</span>
+                        <i data-lucide="chevron-down" class="lucide w-6 h-6 text-blue-400 transform transition-transform duration-300" id="icon-faq3"></i>
+                    </button>
+                    <div class="p-6 bg-gray-800 hidden" id="faq3-content">
+                        <p class="text-gray-400">El sistema es tan simple de utilizar que es autoinstalable. Con la ayuda de nuestros técnicos, lo harás en minutos sin inconvenientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-16 md:py-20 bg-gray-950 text-white relative border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center max-w-2xl">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                ¡Empieza a Disfrutar de la TV del Futuro!
+            </h2>
+            <p class="text-lg mb-10 opacity-80">
+                Déjanos tus datos y un asesor se pondrá en contacto contigo para ofrecerte una cotización personalizada y resolver todas tus dudas.
+            </p>
+            <div id="contact-form" class="bg-gray-900 p-8 rounded-3xl shadow-xl border border-gray-700 text-left">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-400 text-sm font-bold mb-2">Nombre Completo</label>
+                    <input type="text" id="name" name="name" class="shadow-sm appearance-none border border-gray-700 rounded-lg w-full py-3 px-4 text-gray-50 bg-gray-800 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Tu Nombre" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-400 text-sm font-bold mb-2">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" class="shadow-sm appearance-none border border-gray-700 rounded-lg w-full py-3 px-4 text-gray-50 bg-gray-800 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="tu.email@ejemplo.com" required>
+                </div>
+                <div class="mb-8">
+                    <label for="phone" class="block text-gray-400 text-sm font-bold mb-2">Número de Teléfono</label>
+                    <input type="tel" id="phone" name="phone" class="shadow-sm appearance-none border border-gray-700 rounded-lg w-full py-3 px-4 text-gray-50 bg-gray-800 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="+54 9 11 1234 5678" required>
+                </div>
+                <button type="button" onclick="sendToWhatsApp()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Solicitar Cotización Gratis
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 rounded-t-lg border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center md:text-left grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                <a href="#" class="mb-4 inline-flex items-center">
+                    <img src="https://github.com/JAlexisMedrano/data/blob/main/TODO%20DIGITAL.png?raw=true" alt="Logo" class="w-12 h-12 mr-3">
+                    <span class="text-2xl font-bold text-blue-400">TV Digital HD</span>
+                </a>
+                <p class="text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
+                    Tu puerta de entrada al futuro del entretenimiento. Disfruta de una calidad sin igual.
+                </p>
+            </div>
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-bold mb-4 text-gray-50">Enlaces Rápidos</h3>
+                <ul class="space-y-2">
+                    <li><a href="#planes" class="hover:text-white transition duration-200">Planes</a></li>
+                    <li><a href="#contacto" class="hover:text-white transition duration-200">Contacto</a></li>
+                    <li><a href="#" class="hover:text-white transition duration-200">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-bold mb-4 text-gray-50">Contáctanos</h3>
+                <p class="text-sm mb-2">Email: detododigital2023@gmail.com</p>
+                <p class="text-sm mb-4">Teléfono: +54 343 5314-581</p>
+                <div class="flex justify-center md:justify-start space-x-4 mt-2">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                        <i data-lucide="facebook" class="lucide w-6 h-6"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                        <i data-lucide="instagram" class="lucide w-6 h-6"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                        <i data-lucide="twitter" class="lucide w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-12 pt-6 border-t border-gray-800 text-center text-sm text-gray-500">
+            &copy; 2025 TODO DIGITAL. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // FAQ Toggle Functionality
+        function toggleFAQ(id) {
+            const content = document.getElementById(`${id}-content`);
+            const icon = document.getElementById(`icon-${id}`);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // WhatsApp Form Submission Functionality
+        function sendToWhatsApp() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+
+            if (!name || !email || !phone) {
+                const messageBox = document.createElement('div');
+                messageBox.innerHTML = `
+                    <div class="fixed inset-0 bg-gray-950 bg-opacity-75 flex items-center justify-center z-50">
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-xl max-w-sm w-full text-center border-2 border-red-500">
+                            <p class="text-red-400 text-lg font-semibold mb-4">Error</p>
+                            <p class="text-gray-300 mb-6">Por favor, completa todos los campos del formulario.</p>
+                            <button onclick="this.parentNode.parentNode.remove()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                                Aceptar
+                            </button>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(messageBox);
+                return;
+            }
+
+            const whatsappNumber = '5493435314581';
+            const message = `¡Hola! He contactado desde el sitio web y me gustaría recibir una cotización de TV Digital.
+
+*Datos de contacto:*
+Nombre: ${name}
+Email: ${email}
+Teléfono: ${phone}`;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
